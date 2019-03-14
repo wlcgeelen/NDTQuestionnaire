@@ -126,7 +126,7 @@ var json = {
     {
      type: "html",
      name: "slider",
-     html: "<html>
+     html: "
     <head>
         <title>Custom widget: JavaScript range slider, Knockoutjs Survey Library Example</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -167,8 +167,7 @@ var json = {
         
         <script type="text/javascript" src="./index.js"></script>
 
-    </body>
-</html>"
+    </body>"
     }
    ]
   }
