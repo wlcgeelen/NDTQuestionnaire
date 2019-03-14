@@ -62,7 +62,7 @@ var json = {
      type: "text",
      name: "question2",
      title: "Assing a value in the range 0-100, to the attribute ranked lowest on the previous page",
-     isRequired: true,
+     isRequired: false,
      validators: [
       {
        type: "numeric",
