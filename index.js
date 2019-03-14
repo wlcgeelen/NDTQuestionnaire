@@ -35,3 +35,4 @@ var survey = new Survey.Model(surveyJSON, "surveyContainer");
 //Use onComplete event to save the data
 survey.onComplete.add(sendDataToServer);
 
+survey.render("surveyElement");
