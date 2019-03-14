@@ -1,3 +1,8 @@
+// APPLY Bootstrap theme
+Survey
+    .StylesManager
+    .applyTheme("bootstrap");
+
 // LOAD SURVEY
 var surveyJSON = { title: "Tell us, what technologies do you use?", pages: [
   { name:"page1", questions: [ 
@@ -21,18 +26,24 @@ function sendDataToServer(survey) {
   var resultAsString = JSON.stringify(survey.data);
   alert(resultAsString); //send Ajax request to your web server.
 }
+// var surveyWindow = new Survey.SurveyWindow(surveyJSON);
+// window.survey = surveyWindow;
+// surveyWindow.show();
+// Use onComplete event to save the data
+// surveyWindow.survey.onComplete.add(sendDataToServer);
 
-
-// APPLY Bootstrap theme
-Survey.StylesManager.applyTheme("bootstrap");
-
-var surveyWindow = new Survey.SurveyWindow(surveyJSON);
-surveyWindow.show();
+// var survey = new Survey.Model(surveyJSON, "surveyContainer");
 //Use onComplete event to save the data
-surveyWindow.survey.onComplete.add(sendDataToServer);
+// survey.onComplete.add(sendDataToServer);
 
-var survey = new Survey.Model(surveyJSON, "surveyContainer");
-//Use onComplete event to save the data
-survey.onComplete.add(sendDataToServer);
+window.survey = new Survey.Model(surveyJSON);
+
+survey
+    .onComplete
+    .add(function (result) {
+        document
+            .querySelector('#surveyResult')
+            .innerHTML = "result: " + JSON.stringify(result.data);
+    });
 
 survey.render("surveyElement");
