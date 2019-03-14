@@ -2,7 +2,8 @@ SurveyEditor.StylesManager.applyTheme("bootstrap");
 
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown", "nouislider"],
-    generateValidJSON: true
+    // show options menu
+    showOptions: true
 };
 
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
