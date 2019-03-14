@@ -1,16 +1,15 @@
-SurveyEditor
-    .StylesManager
-    .applyTheme("bootstrap");
 
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown"],
-    generateValidJSON: TRUE
+    generateValidJSON: True
 };
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
 
 editor.text = MySurveyJSON;
 
-editor.toolbox.addItem(itemAsJson)
+SurveyEditor
+    .StylesManager
+    .applyTheme("bootstrap");
 
 //Setting this callback will make visible the "Save" button
 editor.saveSurveyFunc = function () {
