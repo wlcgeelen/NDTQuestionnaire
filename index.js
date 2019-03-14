@@ -23,7 +23,7 @@ var json = {
      columns: [
       {
        name: "Attribute rank",
-       isRequired: true
+       isRequired: false
       }
      ],
      choices: [
@@ -81,7 +81,7 @@ var json = {
      type: "multipletext",
      name: "question3",
      title: "Please give the following attributes a values from 0 - 100",
-     isRequired: true,
+     isRequired: false,
      items: [
       {
        name: "FOV"
