@@ -1,7 +1,7 @@
 // APPLY Bootstrap theme
 Survey
     .StylesManager
-    .applyTheme("bootstrap");
+    .applyTheme("default");
 
 // LOAD SURVEY
 var surveyJSON = { title: "Tell us, what technologies do you use?", pages: [
