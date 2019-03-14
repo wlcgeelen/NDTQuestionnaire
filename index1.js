@@ -1,4 +1,4 @@
-
+import noUiSlider from "nouislider";
 
 var slider = document.getElementById('slider');
 
