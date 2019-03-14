@@ -16,6 +16,7 @@ editor.saveSurveyFunc = function () {
 
 editor.text = MySurveyJSON;
 
-
+//set function on save callback
+editor.saveSurveyFunc = saveMySurvey;
 
 
