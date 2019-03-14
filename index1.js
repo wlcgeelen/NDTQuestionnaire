@@ -2,7 +2,7 @@
 
 var slider = document.getElementById('slider');
 
-$("#slider").noUiSlider.create(slider, {
+noUiSlider.create(slider, {
 
     range: {
         'min': 1300,
