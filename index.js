@@ -119,6 +119,32 @@ var json = {
      ]
     }
    ]
+  },
+  {
+   name: "Nouislider",
+   elements: [
+    {
+     type: "html",
+     name: "slider",
+     html: "<div class="example">
+                <div id="slider" class"noUiSlider"></div>
+                <div id="valueInput">
+                    START <input type="text" id="start" value="0"/></label>
+                    END   <input type="text" id="end" value="60"/></label>
+                </div>
+                <script>
+                window.onload =$(function(){                        
+                  $("#noUiSlider").noUiSlider({
+                    handles: 2,
+                    connect: true,
+                    scale:[10,30],
+                    start:[0,60]
+                  });
+                });    
+                </script>
+                </div>"
+    }
+   ]
   }
  ]
 };
