@@ -1,9 +1,10 @@
-editor.StylesManager.applyTheme("bootstrap");
+SurveyEditor.StylesManager.applyTheme("bootstrap");
 
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown", "nouislider"],
     generateValidJSON: true
 };
+
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
 
 editor.text = MySurveyJSON;
