@@ -1,6 +1,3 @@
-SurveyEditor
-    .StylesManager
-    .applyTheme("bootstrap");
 
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown"]
@@ -15,3 +12,7 @@ editor.saveSurveyFunc = function () {
 }
 
 editor.text = MySurveyJSON;
+
+SurveyEditor
+    .StylesManager
+    .applyTheme("bootstrap");
