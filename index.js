@@ -23,7 +23,7 @@ var json = {
      columns: [
       {
        name: "Attribute rank",
-       isRequired: false
+       isRequired: true
       }
      ],
      choices: [
@@ -62,7 +62,7 @@ var json = {
      type: "text",
      name: "question2",
      title: "Assing a value in the range 0-100, to the attribute ranked lowest on the previous page",
-     isRequired: false,
+     isRequired: true,
      validators: [
       {
        type: "numeric",
@@ -81,7 +81,7 @@ var json = {
      type: "multipletext",
      name: "question3",
      title: "Please give the following attributes a values from 0 - 100",
-     isRequired: false,
+     isRequired: true,
      items: [
       {
        name: "FOV"
