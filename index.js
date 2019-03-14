@@ -570,6 +570,12 @@ var json = {
 
 window.survey = new Survey.Model(json);
 
+var survey = new Survey.Model(json);
+$("#surveyContainer").Survey({
+    model:survey,
+    onComplete:sendDataToServer
+});
+
 survey
     .onComplete
     .add(function (result) {
