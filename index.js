@@ -1,6 +1,6 @@
 
 var editorOptions = {
-    questionTypes: ["text", "checkbox", "radiogroup", "dropdown"],
+    questionTypes: ["text", "checkbox", "radiogroup", "dropdown", "nouislider"],
     generateValidJSON: "TRUE"
 };
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
@@ -14,6 +14,7 @@ editor.saveSurveyFunc = function () {
     jsonEl.value = editor.text;
 }
 
+editor.StylesManager.applyTheme("bootstrap");
 SurveyEditor
     .StylesManager
     .applyTheme("bootstrap");
