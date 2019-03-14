@@ -1,8 +1,8 @@
 
 
-var range = document.getElementById('range');
+var range = document.getElementById('slider');
 
-noUiSlider.create(range, {
+noUiSlider.create(slider, {
 
     range: {
         'min': 1300,
