@@ -173,7 +173,7 @@ var json = {
     }
    ]
   }
- ]
+ ] 
 };
 
 window.survey = new Survey.Model(json);
