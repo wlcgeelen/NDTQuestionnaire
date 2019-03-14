@@ -5,6 +5,7 @@ var editorOptions = {
 };
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
 
+editor.StylesManager.applyTheme("bootstrap");
 editor.text = MySurveyJSON;
 
 //Setting this callback will make visible the "Save" button
@@ -14,5 +15,4 @@ editor.saveSurveyFunc = function () {
     jsonEl.value = editor.text;
 }
 
-editor.StylesManager.applyTheme("bootstrap");
 
