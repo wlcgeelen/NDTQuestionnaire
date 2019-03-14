@@ -126,12 +126,30 @@ var json = {
     {
      type: "html",
      name: "slider",
-     html: "<div class="example">
-                <div id="slider" class"noUiSlider"></div>
-                <div id="valueInput">
-                    START <input type="text" id="start" value="0"/></label>
-                    END   <input type="text" id="end" value="60"/></label>
-                </div>
+     html: "<html>
+    <head>
+        <title>Custom widget: JavaScript range slider, Knockoutjs Survey Library Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://unpkg.com/jquery"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+        <script src="https://surveyjs.azureedge.net/1.0.74/survey.ko.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://unpkg.com/nouislider@9.2.0/distribute/nouislider.js"></script>
+        <script src="https://unpkg.com/wnumb@1.1.0"></script>
+        <link href="https://unpkg.com/nouislider@9.2.0/distribute/nouislider.min.css" rel="stylesheet"/>
+        <script src="https://unpkg.com/surveyjs-widgets/surveyjs-widgets.js"></script>
+
+    </head>
+    <body>
+        <div id="surveyContainer">
+            <div id="surveyElement">
+                <div class="example">
+                    <div id="slider" class"noUiSlider"></div>
+                    <div id="valueInput">
+                        START <input type="text" id="start" value="0"/></label>
+                        END   <input type="text" id="end" value="60"/></label>
+                    </div>
                 <script>
                 window.onload =$(function(){                        
                   $("#noUiSlider").noUiSlider({
@@ -142,7 +160,15 @@ var json = {
                   });
                 });    
                 </script>
-                </div>"
+                </div>
+            </div>
+            <div id="surveyResult"></div>
+        </div>
+        
+        <script type="text/javascript" src="./index.js"></script>
+
+    </body>
+</html>"
     }
    ]
   }
