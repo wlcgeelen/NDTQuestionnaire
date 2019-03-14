@@ -1,11 +1,11 @@
+SurveyEditor
+    .StylesManager
+    .applyTheme("bootstrap");
+
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown"]
 };
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
-
-SurveyEditor
-    .StylesManager
-    .applyTheme("bootstrap");
 
 //Setting this callback will make visible the "Save" button
 editor.saveSurveyFunc = function () {
