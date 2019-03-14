@@ -4,8 +4,7 @@ Survey
 Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
 
 var slider = document.getElementById('slider');
-
-noUiSlider.create(slider, {
+$(\"#noUiSlider\").noUiSlider.create(slider, {
 
     range: {
         'min': 1300,
