@@ -15,6 +15,4 @@ editor.saveSurveyFunc = function () {
 }
 
 editor.StylesManager.applyTheme("bootstrap");
-SurveyEditor
-    .StylesManager
-    .applyTheme("bootstrap");
+
