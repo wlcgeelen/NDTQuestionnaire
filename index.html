@@ -1,4 +1,4 @@
-<html>
+/* <html>
     <head>
         <title>Survey</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -70,4 +70,41 @@
         </script>           
       </div>
     </body>
+</html> */
+
+
+<html>
+    <head>
+        <title>Survey</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+        <link href="https://surveyjs.azureedge.net/1.0.74/survey.css" type="text/css" rel="stylesheet" />
+        <script src="https://surveyjs.azureedge.net/1.0.74/survey.ko.min.js"></script>
+        <script src="https://unpkg.com/nouislider@9.2.0/distribute/nouislider.js"></script>
+        <script src="https://unpkg.com/wnumb@1.1.0"></script>
+        <link href="https://unpkg.com/nouislider@9.2.0/distribute/nouislider.min.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        <div id="surveyContainer">
+            <div id="editorElement"></div>
+            <script type="text/javascript" src="./index.js"></script>
+        </div>
+      <div id="noUiSlider" class="noUiSlider"></div>
+      <div id="valueInput">
+        START <input type="text" id="start" value="0"/></label>
+        END   <input type="text" id="end" value="60"/></label>
+      </div>
+
+      <script>
+        window.onload =$(function(){                        
+          $("#noUiSlider").noUiSlider() {
+            handles: 2,
+            connect: true,
+            scale:[10,30],
+            start:[0,60]
+          });
+        </script>           
+      </div>
+    </body>
 </html>
+
