@@ -1,3 +1,8 @@
+Survey
+    .StylesManager
+    .applyTheme("bootstrap");
+Survey.defaultBootstrapCss.navigationButton = "btn btn-green";
+
 var json = {
     pages: [
         {
@@ -108,4 +113,4 @@ survey
             .innerHTML = "result: " + JSON.stringify(result.data);
     });
 
-$("#surveyElement").Survey({model: survey});
+survey.render("surveyElement");
