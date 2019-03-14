@@ -1,7 +1,7 @@
 
 var editorOptions = {
     questionTypes: ["text", "checkbox", "radiogroup", "dropdown"],
-    generateValidJSON: True
+    generateValidJSON: "TRUE"
 };
 var editor = new SurveyEditor.SurveyEditor("editorElement", editorOptions);
 
