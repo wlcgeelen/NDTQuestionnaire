@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Use third-party widgets, Survey Builder Example</title>
+        <title>Survey</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
         <script src="https://surveyjs.azureedge.net/1.0.74/survey.ko.js"></script>
@@ -61,7 +61,7 @@
 
       <script>
         window.onload =$(function(){                        
-          $("#noUiSlider").empty().noUiSlider( 'init', {
+          $("#noUiSlider").noUiSlider() {
             handles: 2,
             connect: true,
             scale:[10,30],
