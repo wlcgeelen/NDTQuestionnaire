@@ -14,4 +14,4 @@ editor.saveSurveyFunc = function () {
     jsonEl.value = editor.text;
 }
 
-editor.text = "{ pages: [{ name:\'page1\', questions: [{ type: \'text\', name:\"q1\"}]}]}";
+editor.text = MySurveyJSON;
