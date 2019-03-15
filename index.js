@@ -27,4 +27,4 @@ $("#surveyContainer").Survey({
         //    .innerHTML = "result: " + JSON.stringify(result.data);
     //});
 
-survey.render("surveyElement");
+survey.render("surveyContainer");
