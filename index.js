@@ -236,16 +236,6 @@ var json = {
      ]
     }
    ]
-  },
-  {
-   name: "Nouislider",
-   elements: [
-    {
-     type: "html",
-     name: "slider",
-     html: "<head>\n        <title>Custom widget: JavaScript range slider, Knockoutjs Survey Library Example</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <script src=\"https://unpkg.com/jquery\"></script>\n        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js\"></script>\n        <script src=\"https://surveyjs.azureedge.net/1.0.74/survey.ko.js\"></script>\n        <link rel=\"stylesheet\" href=\"https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css\">\n        <link rel=\"stylesheet\" href=\"./index.css\">\n        <script src=\"https://unpkg.com/nouislider@9.2.0/distribute/nouislider.js\"></script>\n        <script src=\"https://unpkg.com/wnumb@1.1.0\"></script>\n        <link href=\"https://unpkg.com/nouislider@9.2.0/distribute/nouislider.min.css\" rel=\"stylesheet\"/>\n        <script src=\"https://unpkg.com/surveyjs-widgets/surveyjs-widgets.js\"></script>\n\n    </head>\n    <body>\n        <div id=\"surveyContainer\">\n            <div id=\"surveyElement\">\n                <div class=\"example\">\n                    <div id=\"slider\" class\"noUiSlider\"></div>\n                    <div id=\"valueInput\">\n                        START <input type=\"text\" id=\"start\" value=\"0\"/></label>\n                        END   <input type=\"text\" id=\"end\" value=\"60\"/></label>\n                    </div>\n                <script>\n                window.onload =$(function(){                        \n                  $(\"#noUiSlider\").noUiSlider({\n                    handles: 2,\n                    connect: true,\n                    scale:[10,30],\n                    start:[0,60]\n                  });\n                });    \n                </script>\n                </div>\n            </div>\n            <div id=\"surveyResult\"></div>\n        </div>\n        \n        <script type=\"text/javascript\" src=\"./index.js\"></script>\n\n    </body>"
-    }
-   ]
   }
  ],
  sendResultOnPageNext: true
